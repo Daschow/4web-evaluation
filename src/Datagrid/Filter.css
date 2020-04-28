@@ -1,0 +1,29 @@
+.example-thumb {
+    font-size: 0.9em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 5px solid gray;
+    box-sizing: border-box;
+}
+
+
+.slider{
+    outline: 0;
+    border: 0;
+    border-radius: 500px;
+    width: 400px;
+    max-width: 100%;
+    margin: 24px 0;
+    transition: box-shadow 0.2s ease-in-out;
+   
+}
+.sliderdiv{
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+}
