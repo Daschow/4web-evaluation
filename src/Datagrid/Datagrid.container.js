@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import "./../App.js";
 import axios from "axios";
 import Pagination from "./Pagination";
+import { render } from "@testing-library/react";
 
 import {AtoZ} from "./Datagrid.pure"
 
@@ -12,7 +13,7 @@ const EnchanceData = (props) => {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(10);
-  const [ChangeSort,SetChangeSort] = useState(AtoZ(posts));
+  const [ChangeOrder,setChangeOrder] = useState(AtoZ(posts));
 
 
 
@@ -59,8 +60,8 @@ const EnchanceData = (props) => {
         posts={currentPosts}
         loading={loading}
         tri={tri_croissant_decroissant}
-        ChangeSort={ChangeSort}
-        SetChangeSort={SetChangeSort}
+        ChangeOrder={ChangeOrder}
+        setChangeOrder={setChangeOrder}
       />
 
       <Pagination
