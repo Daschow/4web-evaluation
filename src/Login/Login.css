@@ -1,0 +1,159 @@
+h1 {
+    color: #45a049;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    display: block;
+    margin: 2%;
+    width: 80%;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #2e682e;
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8ce983;
+  }
+  
+  .login__error {
+    color: red;
+    text-align: center;
+  }
+  .login__error--hidden {
+    visibility: hidden;
+  }
+  .login__error--active {
+    visibility: visible;
+  }
+
+  form {
+    display: block;
+    width: 100%;
+  }
+  
+  h2 {
+    width: 100%;
+    color: lighten(#2a2a2a, 20%);
+    font-family: "open sans condensed";
+    font-size: 1.35em;
+    display: block;
+    text-align: center;
+    background: #2a2a2a;
+    text-transform: uppercase;
+    padding: 0.75em 0 0.75em 0;
+    box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+    border: 1px solid darken(#2a2a2a, 5%);
+    margin: 0;
+    font-weight: 200;
+  }
+  meter {
+    width: 100%;
+    height: 1.25em;
+  }
+  
+  .progress_bar {
+    text-align: center;
+    width: 0%;
+    box-sizing: content-box;
+    background: red;
+  }
+  .progress_bar_container {
+    width: 100%;
+    height: 100%;
+    background: grey;
+  }
+  textarea {
+    width: 100px;
+    height: 50px;
+  }
+  table {
+    align-content: center;
+  }
+  .grid_cell {
+    cursor: pointer;
+  }
+  .password-strength__bar-container {
+    width: 500px;
+    height: 70px;
+    background-color: #ddd;
+  }
+  .password-strength__bar {
+    width: 0%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+    box-sizing: border-box;
+    font-size: 3em;
+    transition-property: width, background-color;
+    transition-duration: 0.3s;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family:'Courier New',
+      monospace;
+  }
+  .logindiv{
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgb(123, 187, 33);
+    padding: 10px;
+    margin-top: 50px;
+  /* */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 400px; /*Make the grid smaller than the container*/
+    grid-gap: 50px;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /*padding: 20px 0;*/
+    font-size: 30px;
+  }
+
+
+  .info{
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgb(123, 187, 33);
+    padding: 10px;
+
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .red{
+    color: red;
+  }
