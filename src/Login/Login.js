@@ -1,8 +1,5 @@
 import React from "react";
 import "./Login.css";
-import Header from "../layout/Header/Header";
-
-const subtitle = "Login";
 
 const Login = ({
   email,

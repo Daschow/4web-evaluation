@@ -4,18 +4,15 @@ import React, { useState, useEffect } from "react";
 import "./../App.js";
 import axios from "axios";
 import Pagination from "./Pagination";
-import { render } from "@testing-library/react";
 
-import {AtoZ} from "./Datagrid.pure"
+import { AtoZ } from "./Datagrid.pure";
 
 const EnchanceData = (props) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(10);
-  const [ChangeOrder,setChangeOrder] = useState(AtoZ(posts));
-
-
+  const [ChangeOrder, setChangeOrder] = useState(AtoZ(posts));
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -34,13 +31,10 @@ const EnchanceData = (props) => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
-
-  
-
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const change_nb_posts = () => {
-      setPostsPerPage(postsPerPage);
+    setPostsPerPage(postsPerPage);
   };
 
   const tri_croissant_decroissant = () => {};
@@ -53,7 +47,6 @@ const EnchanceData = (props) => {
       <Filters
         change_nb_posts={change_nb_posts}
         setPostsPerPage={setPostsPerPage}
-        
         setSliderLenght={setSliderLenght}
       />
       <Posts
