@@ -8,6 +8,11 @@ import Datagrid from "../../Datagrid/Datagrid.container";
 const Navbar = ({}) => {
   return (
     <Router>
+      <ul>
+        <li>
+          <Link to="/login">login</Link>
+        </li>
+      </ul>
       <>
         <Route path="/login" component={Login} />
         <Route path="/Datagrid" component={Datagrid} />
