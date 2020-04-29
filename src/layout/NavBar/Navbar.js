@@ -5,10 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from "../../Login/login.container";
 import Datagrid from "../../Datagrid/Datagrid.container";
 
-
-
-
-const Navbar = ({}) => { 
+const Navbar = ({}) => {
   return (
     <Router>
       <>

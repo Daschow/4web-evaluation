@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import NavBar from "./layout/NavBar/Navbar";
-
+import Login from "./Login/Login";
 import ReactDOM from "react-dom";
 
 class App extends Component {
@@ -15,8 +15,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Login></Login>
         <NavBar></NavBar>
-
       </div>
     );
   }
