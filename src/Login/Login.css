@@ -31,6 +31,7 @@ h1 {
     outline: none;
   }
   
+  
   input[type="submit"]:hover {
     background-color: #8ce983;
   }
